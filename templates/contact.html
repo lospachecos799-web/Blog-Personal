@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}Contacto{% endblock %} 
+    
+{% block content %}
+    <div class="home-presentation">
+        <h1 class="main-title" style="color: #00A38D; margin-bottom: 50px;">Contáctame</h1>
+        
+        <p class="description-text">
+            Si tienes alguna pregunta, oportunidad de colaboración o simplemente quieres saludar, puedes contactarme directamente por correo electrónico o a través de mis redes sociales.
+        </p>
+        
+        <div style="margin-top: 50px;">
+            <p class="accent-text" style="font-size: 1.5em; margin-bottom: 20px;">
+                Correo: ppacheco@thefactoryhka.com
+            </p>
+             <p class="accent-text" style="font-size: 1.5em; margin-bottom: 20px;">
+                Telefono: 0424-131-76-66
+            </p>
+            
+            <a href="{{ url_for('about') }}" class="cv-button">VER REDES SOCIALES</a>
+        </div>
+    </div>
+{% endblock content %}

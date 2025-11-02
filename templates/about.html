@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}Sobre Mí y Redes Sociales{% endblock %} 
+
+{% block content %}
+    
+    <div class="about-grid">
+        
+        <div class="grid-photo-container">
+            <img src="{{ url_for('static', filename='img/foto_perfil.jpg') }}" 
+                 alt="Mi Foto de Perfil" 
+                 class="profile-photo"> 
+        </div>
+
+        <div class="grid-text-content">
+            
+           <p style="color: #00A38D; font-size: 1.5em; font-weight: 300; margin-bottom: 5px;">ARQUITECTO DE SOLUCIONES WEB</p>
+           <h1 style="font-size: 3.5em; color: white; font-weight: 300; line-height: 1.2;">Construyendo Sistemas Modernos con Enfoque Full-Stack</h1>
+            
+            <p style="margin-top: 30px; font-size: 1.2em;">Actualmente, estoy en el 5to semestre de mi carrera y enfoco mi aprendizaje en la creación de sistemas funcionales y prácticos. Busco constantemente oportunidades para aplicar la programación en proyectos reales y crecer como desarrollador full-stack</p>
+            
+            <a href="https://github.com/lospachecos799-web" class="cv-button">Mi GITHUB</a>
+
+            <div style="margin-top: 0px;">
+                <h2>MIS REDES SOCIALES:</h2>
+                
+                <ul>
+                    <li><a href="mailto:ppacheco@thefactoryhka.com">Gmail</a></li>
+                    <li><a href="https://www.instagram.com/pablopaint95?igsh=VWvhVMXkydHfINGh3" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/pablo.pacheco.332?mibextid=ZbWKWl" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

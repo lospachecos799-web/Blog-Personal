@@ -1,0 +1,218 @@
+/* GENERAL THEME: DARK MODE Y ESTRUCTURA BASE */
+body {
+    background-color: #111;
+    color: #eee;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Encabezado: Centra el menú y usa posición relativa para el logo */
+header {
+    background-color: #000;
+    padding: 1em 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+
+/* Posicionamos el logo en la esquina superior izquierda (absoluto) */
+.logo-container {
+    position: absolute;
+    left: 40px; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+/* Estilo para el Logo: CUADRADO */
+.header-logo {
+    width: 40px; 
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Estilo de los enlaces de navegación */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; 
+    padding: 10px 10px;
+    transition: color 0.3s;
+
+    /*  ESTA LÍNEA PARA HACER EL TEXTO MÁS GRANDE */
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #00A38D;
+    background-color: transparent;
+}
+
+/* TÍTULOS Y ACENTOS */
+h1, h2 {
+    color: #00A38D; 
+    font-size: 2.5em;
+    margin-bottom: 0.1em;
+}
+
+/* Contenedor de Contenido Principal (Fondo Negro Asegurado) */
+.content {
+    padding: 40px; 
+    background-color: #111; /* Fondo Negro */
+}
+
+footer {
+    background-color: #000; /* Aseguramos un negro más sólido */
+    color: #fff; /* Blanco puro para máximo contraste */
+    padding: 35px 0; /* Aumentamos el espacio vertical */
+    text-align: center;
+    
+    /* Añadimos una línea sutil de color turquesa en la parte superior */
+    border-top: 2px solid #00A38D; 
+    
+    /* Hacemos el texto un poco más pequeño para que sea discreto */
+    font-size: 0.9em; 
+}
+
+/* --- DISEÑO DE PÁGINA DE INICIO (INDEX) --- */
+
+.home-presentation {
+    text-align: center;
+    max-width: 900px; 
+    margin: 100px auto 0 auto; /* Centra el contenedor en la página */
+}
+
+.main-title {
+    font-size: 3.8em; 
+    font-weight: 300; 
+    color: white; 
+    line-height: 1.2;
+    margin: 15px 0 30px 0;
+}
+
+.accent-text {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #00A38D; /* El color de acento va en el CSS, no en el HTML */
+}
+
+.description-text {
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #eee; /* Asegura que el texto sea blanco */
+}
+
+/* DISEÑO DE DOS COLUMNAS (Flexbox) */
+.about-grid {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start; /* CLAVE: Asegura que el contenido se alinee arriba */
+    margin-top: 40px;
+    padding: 0 50px; 
+}
+
+.grid-photo-container {
+    flex: 0 0 350px; 
+}
+
+.profile-photo {
+    width: 410px; /* Un ancho fijo para la foto */
+    height: 600px; /* Aumentamos la altura para hacerla más grande */
+    object-fit: cover;
+    border-radius: 5px; 
+}
+
+.grid-text-content p {
+    color: #eee; /* Aseguramos que el color sea blanco para mayor contraste */
+    font-size: 1.2em; /* Aumentamos el tamaño para mejor legibilidad */
+    line-height: 1.5;
+    margin-top: 15px; /* Separación del título */
+    margin-bottom: 30px; /* Espacio antes del botón */
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 10px;
+
+/* AÑADE ESTA LÍNEA PARA SEPARARLO DE LAS REDES SOCIALES */
+    margin-bottom: 100px;
+
+    border: 2px solid #00A38D; 
+    color: #00A38D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cv-button:hover {
+    background-color: #00A38D;
+    color: #111;
+}
+
+/* Ajustamos el espacio en el contenido de la columna de texto */
+.grid-text-content h1 {
+    /* Mantenemos el tamaño y grosor, pero ajustamos los márgenes */
+    font-size: 3.5em; /* Asegura que el título sea grande y destacado */
+    font-weight: 300;
+    
+    /* Le da espacio entre el título superior (PYTHON CON PABLO) y el texto principal */
+    margin-top: 10px; 
+    margin-bottom: 5px; /* Reducimos el espacio después del título */
+}
+
+/* Ajustamos el espacio para el botón (MI GITHUB) */
+.cv-button {
+    /* Aplicamos más espacio DEBAJO del botón para separarlo de las redes sociales */
+    margin-bottom: 0px; 
+    /* Mantenemos el resto de estilos del botón (padding, border, color) */
+}
+
+/* Ajustamos el espacio para el título de la sección de Redes Sociales */
+.grid-text-content h2 {
+    /* El diseño de referencia tiene mucho espacio entre el contenido y la siguiente sección */
+    margin-top: 20px; 
+    margin-bottom: 15px; 
+    /* Asegura que este subtítulo sea más pequeño que el título principal (h1) */
+    font-size: 2em; 
+
+    /* El resto de estilos para h2 */
+    color: #00A38D; 
+    font-size: 1.5em;
+}
+
+/* Ajustamos el estilo del texto de acento (PYTHON CON PABLO) */
+.accent-text {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #00A38D; 
+    margin-bottom: 0; /* Lo acercamos al título principal */
+}
+
+/* --- ESTILOS DE REDES SOCIALES --- */
+
+.grid-text-content ul {
+    list-style-type: none; /* Elimina los puntos (bullets) */
+    padding-left: 0; /* Asegura que la lista se alinee a la izquierda */
+    margin-top: 20px;
+}
+
+.grid-text-content li {
+    margin-bottom: 15px; /* Espacio vertical entre cada enlace */
+}
+
+.grid-text-content ul a {
+    color: #eee; /* Texto blanco/claro */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1.0em; 
+    transition: color 0.3s;
+}
+
+.grid-text-content ul a:hover {
+    color: #00A38D; /* Aplica el color de acento turquesa al pasar el ratón */
+}
+
+/* Ajuste de grosor para el subtítulo de redes sociales */
+.grid-text-content h2 {
+    font-weight: 300; /* Hace el texto más delgado */
+    margin-top: 10px; /* Aseguramos un margen superior mínimo */
+}
